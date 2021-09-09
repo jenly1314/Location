@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnStartLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Start Location"
+        android:textAllCaps="false"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnStopLocation"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/btnStopLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Stop Location"
+        android:textAllCaps="false"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/btnStartLocation"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbOnceLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Once location"
+        android:layout_margin="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartLocation"/>
+
+
+    <CheckBox
+        android:id="@+id/cbLastKnownLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Known Location"
+        android:layout_margin="14dp"
+        android:checked="true"
+        app:layout_constraintLeft_toRightOf="@+id/cbOnceLocation"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartLocation"/>
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:lineSpacingMultiplier="1.2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbLastKnownLocation"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
