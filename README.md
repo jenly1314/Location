@@ -12,7 +12,7 @@
 [![Blog](https://img.shields.io/badge/blog-Jenly-9933CC.svg)](https://jenly1314.github.io/)
 [![QQGroup](https://img.shields.io/badge/QQGroup-20867961-blue.svg)](http://shang.qq.com/wpa/qunwpa?idkey=8fcc6a2f88552ea44b1411582c94fd124f7bb3ec227e2a400dbbfaad3dc2f5ad)
 
-Location 是一个通过 Android 自带的 LocationManager 来实现的定位功能库。
+Location 是一个通过 Android 自带的 LocationManager 来实现的定位功能。
 
 > 之所以写这个库的主要原因还需要从下面的场景说起：在开发某个App的过程当中，可能有个需求需要用到定位功能，但是又不那么重要；
 这个时候如果选择使用第三方的定位服务，需要先去申请相关的appKey和集成定位相关的SDK，显得太繁琐了。杀鸡焉用宰牛刀，我们只是需要一个简单的定位功能，使用自带的实现不香吗？因此就有了 **Location**。
