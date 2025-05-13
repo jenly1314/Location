@@ -2,20 +2,20 @@
 
 ![Image](app/src/main/ic_launcher-playstore.png)
 
-[![Download](https://img.shields.io/badge/download-App-blue.svg)](https://raw.githubusercontent.com/jenly1314/Location/master/app/release/app-release.apk)
-[![MavenCentral](https://img.shields.io/maven-central/v/com.github.jenly1314/location)](https://repo1.maven.org/maven2/com/github/jenly1314/location)
-[![JitPack](https://jitpack.io/v/jenly1314/Location.svg)](https://jitpack.io/#jenly1314/Location)
-[![CI](https://travis-ci.com/jenly1314/Location.svg?branch=master)](https://travis-ci.com/jenly1314/Location)
-[![CircleCI](https://circleci.com/gh/jenly1314/Location.svg?style=svg)](https://circleci.com/gh/jenly1314/Location)
-[![API](https://img.shields.io/badge/API-21%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=21)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/mit-license.php)
+[![MavenCentral](https://img.shields.io/maven-central/v/com.github.jenly1314/location?logo=sonatype)](https://repo1.maven.org/maven2/com/github/jenly1314/Location)
+[![JitPack](https://img.shields.io/jitpack/v/github/jenly1314/Location?logo=jitpack)](https://jitpack.io/#jenly1314/Location)
+[![CI](https://img.shields.io/github/actions/workflow/status/jenly1314/Location/gradle.yml?logo=github)](https://github.com/jenly1314/Location/actions/workflows/gradle.yml)
+[![Download](https://img.shields.io/badge/download-APK-brightgreen?logo=github)](https://raw.githubusercontent.com/jenly1314/Location/master/app/release/app-release.apk)
+[![API](https://img.shields.io/badge/API-21%2B-brightgreen?logo=android)](https://developer.android.com/guide/topics/manifest/uses-sdk-element#ApiLevels)
+[![License](https://img.shields.io/github/license/jenly1314/Location?logo=open-source-initiative)](https://opensource.org/licenses/mit)
+
 
 Location 是一个通过 Android 自带的 LocationManager 来实现的定位功能。
 
 > 之所以写这个库的主要原因还需要从下面的场景说起：在开发某个App的过程当中，可能有个需求需要用到定位功能，但是又不那么重要；
 这个时候如果选择使用第三方的定位服务，需要先去申请相关的appKey和集成定位相关的SDK，显得太繁琐了。杀鸡焉用宰牛刀，我们只是需要一个简单的定位功能，使用自带的实现不香吗？因此就有了 **Location**。
 
-## Gif 展示
+## 效果展示
 ![Image](GIF.gif)
 
 > 你也可以直接下载 [演示App](https://raw.githubusercontent.com/jenly1314/Location/master/app/release/app-release.apk) 体验效果
@@ -33,7 +33,7 @@ Location 是一个通过 Android 自带的 LocationManager 来实现的定位功
     }
     ```
 
-2. 在Module的 **build.gradle** 里面添加引入依赖项
+2. 在Module的 **build.gradle** 中添加依赖项
 
     ```gradle
     implementation 'com.github.jenly1314:location:1.0.0'
@@ -287,33 +287,14 @@ class MainActivity : AppCompatActivity() {
 
 更多使用详情，请查看[app](app)中的源码使用示例或直接查看[API帮助文档](https://jitpack.io/com/github/jenly1314/Location/latest/javadoc/)
 
+## 相关推荐
+- [MapHelper](https://github.com/jenly1314/MapHelper) 一个整合了高德地图、百度地图、腾讯地图、谷歌地图等相关路线规划和导航的地图帮助类库。
 
-## 版本记录
+## 版本日志
 
 #### v1.0.0：2021-9-9
 *  Location初始版本
 
-## 赞赏
-如果你喜欢Location，或感觉Location帮助到了你，可以点右上角“Star”支持一下，你的支持就是我的动力，谢谢 :smiley:
-<p>您也可以扫描下面的二维码，请作者喝杯咖啡 :coffee:
+---
 
-<div>
-   <img src="https://jenly1314.github.io/image/page/rewardcode.png">
-</div>
-
-## 关于我
-
-| 我的博客                                                                                | GitHub                                                                                  | Gitee                                                                                  | CSDN                                                                                 | 博客园                                                                            |
-|:------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------|
-| <a title="我的博客" href="https://jenly1314.github.io" target="_blank">Jenly's Blog</a> | <a title="GitHub开源项目" href="https://github.com/jenly1314" target="_blank">jenly1314</a> | <a title="Gitee开源项目" href="https://gitee.com/jenly1314" target="_blank">jenly1314</a>  | <a title="CSDN博客" href="http://blog.csdn.net/jenly121" target="_blank">jenly121</a>  | <a title="博客园" href="https://www.cnblogs.com/jenly" target="_blank">jenly</a>  |
-
-## 联系我
-
-| 微信公众号        | Gmail邮箱                                                                          | QQ邮箱                                                                              | QQ群                                                                                                                       | QQ群                                                                                                                       |
-|:-------------|:---------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
-| [Jenly666](http://weixin.qq.com/r/wzpWTuPEQL4-ract92-R) | <a title="给我发邮件" href="mailto:jenly1314@gmail.com" target="_blank">jenly1314</a> | <a title="给我发邮件" href="mailto:jenly1314@vip.qq.com" target="_blank">jenly1314</a> | <a title="点击加入QQ群" href="https://qm.qq.com/cgi-bin/qm/qr?k=6_RukjAhwjAdDHEk2G7nph-o8fBFFzZz" target="_blank">20867961</a> | <a title="点击加入QQ群" href="https://qm.qq.com/cgi-bin/qm/qr?k=Z9pobM8bzAW7tM_8xC31W8IcbIl0A-zT" target="_blank">64020761</a> |
-
-<div>
-   <img src="https://jenly1314.github.io/image/page/footer.png">
-</div>
-   
+![footer](https://jenly1314.github.io/page/footer.svg)
