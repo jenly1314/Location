@@ -93,7 +93,7 @@ class LocationClient(context: Context) : ILocationClient {
 
             if(provider == null){
                 mErrorCode = LocationErrorCode.PROVIDER_EXCEPTION
-                throw throw IllegalArgumentException("Provider is null or doesn't exist.")
+                throw IllegalArgumentException("Provider is null or doesn't exist.")
             }
 
             if(mLocationOption.isLastKnownLocation){
